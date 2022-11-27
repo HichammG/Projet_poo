@@ -20,6 +20,10 @@ class Etudiant(Personne):
         return self.__numero_tel
 
     # additional setters
+<<<<<<< HEAD
     def setNumeroTel(self, numero):
+=======
+    def setCours_assigne(self, numero):
+>>>>>>> origin/master
         self.__numero_tel = numero
 

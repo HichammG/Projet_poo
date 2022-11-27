@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import mysql.connector
 import mysql.connector
 from Personne import Personne
@@ -6,6 +7,13 @@ from classe import classe
 
 class Administrateur(Personne):
     def __init__(self, nom, prenom, date_de_naissance, lieu_de_naissance, adresse_electronique, matricule, mot_de_passe):
+=======
+from Personne import Personne
+# classe administrateur
+
+class Administrateur(Personne):
+    def __init__(self, nom, prenom, date_de_naissance, lieu_de_naissance, adresse_electronique,matricule, mot_de_passe):
+>>>>>>> origin/master
         super().__init__(nom, prenom, date_de_naissance, lieu_de_naissance, adresse_electronique, matricule)
         self.__mot_de_pass = mot_de_passe
 
@@ -20,6 +28,7 @@ class Administrateur(Personne):
     # Connexion a l application via un login et un mot de passe
     def connect(self, login: str, mot_de_passe: str):
         # fonction de connexion
+<<<<<<< HEAD
         pass
 
     def create_in_DB (self):
@@ -55,3 +64,6 @@ class Administrateur(Personne):
         cursor.close()
         cnx.close()
         print("Classroom object read from database")
+=======
+        pass
+>>>>>>> origin/master

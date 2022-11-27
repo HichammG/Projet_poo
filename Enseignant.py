@@ -10,5 +10,5 @@ class Enseignant (Personne):
 
         # additional setters
 
-    def setNumeroTel(self, numero):
+    def setCours_assigne(self, numero):
         self.__numero_tel = numero
