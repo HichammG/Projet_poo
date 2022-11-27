@@ -43,9 +43,21 @@ match choix:
             print("Merci pour votre visite !")
 
     case "T":
-        print("enseignat")
+        print("visualiser les classes")
+        resultat = ens.visualise_classe()
+        print(resultat)
+        print("modifier les information personnele")
+        numeroTel=input("Entrer votre numéro de téléphone: ")
+        mail= input("Entrer votre adresse electronique")
+        cursor.execute("update Enseignant set numeroTel={} , mail={}".format(numeroTel,mail))
+
     case "A":
-        print("administrateur")
+        admin=Administrateur.findByMatrc(matr)
+        print("creer une classe")
+        cls= input("Entrer le nom de la classe")
+        admin.create_classe(cls)
+
+
 
     case _:
         print("Nous ne reconnaissons pas ce choix.")
