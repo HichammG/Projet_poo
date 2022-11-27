@@ -26,4 +26,15 @@ class Etudiant(Personne):
     def setCours_assigne(self, numero):
 >>>>>>> origin/master
         self.__numero_tel = numero
+    
+     #afficher les collègues d'un etudiant dans la meme classe
+    def list_etudiant_DB(self, matricule):
+        # connect to DB
+        cnx = mysql.connector.connect(user='root', password='password', host='127.0.0.1', database='poo')
+        cursor = cnx.cursor()
+        res = cursor.execute("SELECT nom,prenom FROM etudiant join classroom WHERE etudiant.classroom_id = classroom.classroom_id")
+
+        cnx.close()
+        print(res)
+        print("les étudiants de la meme classe")
 
