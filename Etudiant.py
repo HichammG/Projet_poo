@@ -22,7 +22,8 @@ class Etudiant(Personne):
         res=db_management.query_from_DB(sql)
         print("les étudiants de la meme classe")
         print(res)
-
+        
+    #modifier les informations personnelles d'un etudiant
     def modifier(self,Etudiant_ID, val_input):
         sql=f"UPDATE poo.etudiant SET Email='{val_input}' WHERE ID='{Etudiant_ID}'"
         db_management.insert_in_db(sql)
