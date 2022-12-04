@@ -34,3 +34,39 @@ class Personne():
         self.__adresse_electronique = adresse_electronique
     def set_matricule(self,matricule):
         self.__matricule = matricule
+        
+    def visualiser_classes_enseignant(self,personne_ID_choix):
+        pass
+    
+    def visualiser_classe(self, choix_classe):
+        pass
+    
+    def changer_info(self,Enseignant_ID, column_input, val_input):
+        pass
+    
+    def list_etudiant_DB(self, matricule):
+        pass
+    
+    def modifier(self,Etudiant_ID, val_input):
+        pass
+    
+    def create_classroom(self,name):
+        pass
+    
+    def ajouter_personne_classe(self,choix_type, classe_ID_input, personne_ID_choix):
+        pass
+    
+    def afficher_classe(self, classe_ID_input):
+        pass
+    
+    def retirer_personne_classe(self,choix_type,classe_ID_input,personne_ID_choix):
+        pass
+    
+    def modifier_personne(self,choix_type,personne_ID_choix, column_input, val_input):
+        pass
+    
+    def visualiser_classes_enseignant(self,personne_ID_choix):
+        pass
+    
+    def afficher_classe_etudiant(self,personne_ID_choix):
+        pass
